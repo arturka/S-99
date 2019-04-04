@@ -15,4 +15,7 @@ object P05 {
 
         inner(List.empty[T], list)
     }
+
+    def reverseFunc[T](list: List[T]): List[T] = 
+      list.foldRight(List.empty[T])((x, acc) => acc :+ x)
 }
